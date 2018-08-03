@@ -1,4 +1,4 @@
-package hello;
+package me.bright.user;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

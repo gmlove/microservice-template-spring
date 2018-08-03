@@ -1,4 +1,4 @@
-package hello;
+package me.bright.user;
 
 import org.springframework.data.repository.CrudRepository;
 

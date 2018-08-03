@@ -1,4 +1,4 @@
-package hello;
+package me.bright.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,21 +9,22 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(path = "/demo")
-public class MainController {
+public class UserResource {
+
   @Autowired
-  private UserRepository userRepository;
+  private UserService userService;
 
   @GetMapping(path = "/add")
   public @ResponseBody String addNewUser(@RequestParam String name, @RequestParam String email) {
-    User n = new User();
-    n.setName(name);
-    n.setEmail(email);
-    userRepository.save(n);
+    User user = new User();
+    user.setName(name);
+    user.setEmail(email);
+    userService.save(user);
     return "Saved";
   }
 
   @GetMapping(path = "/all")
   public @ResponseBody Iterable<User> getAllUsers() {
-    return userRepository.findAll();
+    return userService.findAll();
   }
 }

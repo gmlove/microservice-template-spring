@@ -12,13 +12,10 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-apply plugin: 'checkstyle'
 apply plugin: 'findbugs'
+apply from: 'gradle/checkstyle.gradle'
+apply from: 'gradle/test-coverage.gradle'
 
-checkstyle {
-    toolVersion '6.9'    // set Checkstyle version here
-    showViolations = true
-}
 
 bootJar {
     baseName = 'gs-accessing-data-mysql'
