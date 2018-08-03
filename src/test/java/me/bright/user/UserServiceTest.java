@@ -15,6 +15,7 @@ import org.mockito.MockitoAnnotations;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 public class UserServiceTest {
   @InjectMocks
@@ -44,4 +45,15 @@ public class UserServiceTest {
     assertThat(users.size(), equalTo(1));
     assertThat(users.get(0), is(user));
   }
+
+  @Test
+  public void should_findById_success() {
+    User user = new User();
+    when(userRepository.findById(1)).thenReturn(Optional.of(user));
+
+    Optional<User> users = userService.findById(1);
+    assertThat(users.isPresent(), equalTo(true));
+    assertThat(users.get(), is(user));
+  }
+
 }

@@ -21,7 +21,7 @@ jacocoTestReport {
     }
 }
 
-def coverageExcludes = ['*.User', '*.UserResource', '*.Application']
+def coverageExcludes = ['*.User', '*.UserResource', '*.Application', '*.ResourceNotFoundException', '*.*Dto']
 
 jacocoTestCoverageVerification {
     violationRules {
