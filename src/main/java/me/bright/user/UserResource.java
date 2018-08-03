@@ -15,7 +15,8 @@ public class UserResource {
   private UserService userService;
 
   @GetMapping(path = "/add")
-  public @ResponseBody String addNewUser(@RequestParam String name, @RequestParam String email) {
+  @ResponseBody
+  public String addNewUser(@RequestParam String name, @RequestParam String email) {
     User user = new User();
     user.setName(name);
     user.setEmail(email);
@@ -24,7 +25,8 @@ public class UserResource {
   }
 
   @GetMapping(path = "/all")
-  public @ResponseBody Iterable<User> getAllUsers() {
+  @ResponseBody
+  public Iterable<User> getAllUsers() {
     return userService.findAll();
   }
 }

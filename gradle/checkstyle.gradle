@@ -3,4 +3,5 @@ apply plugin: 'checkstyle'
 checkstyle {
     toolVersion '6.9'
     showViolations = true
+    ignoreFailures = false
 }

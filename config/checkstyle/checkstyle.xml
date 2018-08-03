@@ -24,7 +24,8 @@
 <module name = "Checker">
   <property name="charset" value="UTF-8"/>
 
-  <property name="severity" value="warning"/>
+  <!-- CHANGED: default level as error -->
+  <property name="severity" value="error"/>
 
   <property name="fileExtensions" value="java, properties, xml"/>
   <!-- Checks for whitespace                               -->
@@ -184,6 +185,8 @@
     <module name="JavadocMethod">
       <property name="scope" value="public"/>
       <property name="allowMissingParamTags" value="true"/>
+      <!-- CHANGED: added -->
+      <property name="allowMissingJavadoc" value="true"/>
       <property name="allowMissingThrowsTags" value="true"/>
       <property name="allowMissingReturnTag" value="true"/>
       <property name="minLineCount" value="2"/>
