@@ -22,9 +22,8 @@ curl localhost:8080/demo/users/1
 - google checkstyle
 - findbugs
 - transaction
+- logging
 
 ## TODO:
 - ascii doc
 - json api spec
-- restful
-- logging
