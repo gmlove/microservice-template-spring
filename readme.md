@@ -23,6 +23,7 @@ curl localhost:8080/demo/users/1
 - findbugs
 - transaction
 - logging
+- db migration
 
 ## TODO:
 - ascii doc

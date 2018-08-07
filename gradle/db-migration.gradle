@@ -1,0 +1,7 @@
+apply plugin: 'org.flywaydb.flyway'
+
+flyway {
+    url = 'jdbc:mysql://ai01:14306/db_example?useSSL=false'
+    user = 'root'
+    password = '1111'
+}
