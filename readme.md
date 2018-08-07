@@ -1,3 +1,9 @@
+## Intellj Setup
+
+- Install google-java-format plugin
+- Install CheckStyle-IDEA plugin
+- Configure import orders to be 'static imports -- other imports -- java imports'
+
 ## Test environment setup
 
 ```
@@ -9,10 +15,16 @@ curl localhost:8080/demo/users
 curl localhost:8080/demo/users/1
 ```
 
-## TODO:
+## Features
 - swagger
-- ascii doc
+- actuator endpoints
+- test coverage
+- google checkstyle
+- findbugs
 - transaction
+
+## TODO:
+- ascii doc
 - json api spec
 - restful
 - logging
