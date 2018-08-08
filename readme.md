@@ -24,6 +24,7 @@ curl localhost:8080/demo/users/1
 - transaction
 - logging
 - db migration
+- cloud config
 
 ## TODO:
 - ascii doc
