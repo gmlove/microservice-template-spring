@@ -2,7 +2,7 @@
 
 - Install google-java-format plugin
 - Install CheckStyle-IDEA plugin
-- Configure import orders to be 'static imports -- other imports -- java imports'
+- Configure import orders to be 'static imports -- other imports -- java imports, javax imports'
 
 ## Test environment setup
 
